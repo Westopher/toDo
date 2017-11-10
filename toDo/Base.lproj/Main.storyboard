@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--ToDo List-->
         <scene sceneID="AHH-he-10Z">
             <objects>
                 <tableViewController id="ODD-Fj-WDC" sceneMemberID="viewController">
@@ -32,7 +32,9 @@
                             <outlet property="delegate" destination="ODD-Fj-WDC" id="7yG-tK-MPO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="b4k-6K-jGJ"/>
+                    <navigationItem key="navigationItem" title="ToDo List" id="b4k-6K-jGJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mfr-Tc-9mp"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCP-5u-dxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
