@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D2878121FB66EE5000FA618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2878111FB66EE5000FA618 /* AppDelegate.swift */; };
-		3D2878141FB66EE5000FA618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2878131FB66EE5000FA618 /* ViewController.swift */; };
 		3D2878171FB66EE5000FA618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2878151FB66EE5000FA618 /* Main.storyboard */; };
 		3D28781A1FB66EE5000FA618 /* toDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D2878181FB66EE5000FA618 /* toDo.xcdatamodeld */; };
 		3D28781C1FB66EE5000FA618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28781B1FB66EE5000FA618 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		3D28780E1FB66EE5000FA618 /* toDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2878111FB66EE5000FA618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D2878131FB66EE5000FA618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D2878161FB66EE5000FA618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D2878191FB66EE5000FA618 /* toDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = toDo.xcdatamodel; sourceTree = "<group>"; };
 		3D28781B1FB66EE5000FA618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				3D2878111FB66EE5000FA618 /* AppDelegate.swift */,
-				3D2878131FB66EE5000FA618 /* ViewController.swift */,
 				3D2878151FB66EE5000FA618 /* Main.storyboard */,
 				3D28781B1FB66EE5000FA618 /* Assets.xcassets */,
 				3D28781D1FB66EE5000FA618 /* LaunchScreen.storyboard */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2878141FB66EE5000FA618 /* ViewController.swift in Sources */,
 				3D2878121FB66EE5000FA618 /* AppDelegate.swift in Sources */,
 				3D28781A1FB66EE5000FA618 /* toDo.xcdatamodeld in Sources */,
 			);
