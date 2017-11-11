@@ -10,17 +10,32 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
 
+    //this array will hold ToDo objects and begins as being empty. When createToDoos is called as a function, then it returns the properties within the array created by the createToDos function.
+    var toDos : [ToDo] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    
+    func createToDos() -> [ToDo] {
+        
+        let eggs = ToDo()
+        eggs.name = "Buy Eggs"
+        eggs.important = true
+        
+        let dog = ToDo()
+        dog.name = "Luna"
+        dog.important = true
+        
+        let cheese = ToDo()
+        cheese.name = "American"
+        cheese.important = false
+        
+        return [eggs, dog, cheese]
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
