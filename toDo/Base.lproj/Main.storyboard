@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="216.80000000000001" y="152.47376311844079"/>
         </scene>
-        <!--View Controller-->
+        <!--Add To Do View Controller-->
         <scene sceneID="qy9-dJ-YgT">
             <objects>
-                <viewController id="X8s-dm-D4y" sceneMemberID="viewController">
+                <viewController id="X8s-dm-D4y" customClass="AddToDoViewController" customModule="toDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ipj-mT-ezq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJG-c9-hJK">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lJG-c9-hJK">
                                 <rect key="frame" x="163" y="218" width="51" height="31"/>
                             </switch>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-Zj-NAN">
@@ -80,6 +80,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssn-fQ-eWK">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addTapped:" destination="X8s-dm-D4y" eventType="touchUpInside" id="vec-L0-O9g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -101,6 +104,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AeX-5W-hLX"/>
                     </view>
+                    <connections>
+                        <outlet property="importantSwitch" destination="lJG-c9-hJK" id="mQf-hs-a2T"/>
+                        <outlet property="titleTextField" destination="Tua-En-sfQ" id="08c-b2-xto"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYe-Xh-MvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
