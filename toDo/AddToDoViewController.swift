@@ -22,13 +22,18 @@ class AddToDoViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: Any) {
         let toDo = ToDo()
-        toDo.name = titleTextField.text!
-        toDo.important = importantSwitch.isOn
         
-        previousVC.toDos.append(toDo)
-        previousVC.tableView.reloadData()
+        /*if let means that if you can assign titleTextField.text to a variable, then you can then work with it. If it can be assigned to a variable, that means it's not nil. */
+        if let titleText = titleTextField.text {
+            toDo.name = titleText
+            toDo.important = importantSwitch.isOn
+            
+            previousVC.toDos.append(toDo)
+            previousVC.tableView.reloadData()
+            
+            navigationController?.popViewController(animated: true)
+        }
         
-        navigationController?.popViewController(animated: true)
     }
     
 }
