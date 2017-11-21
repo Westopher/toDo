@@ -21,6 +21,7 @@ class AddToDoViewController: UIViewController {
     }
     
     @IBAction func addTapped(_ sender: Any) {
+       /*
         let toDo = ToDo()
         
         /*if let means that if you can assign titleTextField.text to a variable, then you can then work with it. If it can be assigned to a variable, that means it's not nil. */
@@ -33,6 +34,8 @@ class AddToDoViewController: UIViewController {
             
             navigationController?.popViewController(animated: true)
         }
+        */
+        
         
     }
     
